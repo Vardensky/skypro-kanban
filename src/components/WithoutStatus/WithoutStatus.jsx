@@ -1,4 +1,4 @@
-function NeedToDo() {
+function WithoutStatus() {
 	return (
 		<>
 			<main className="main">
@@ -281,4 +281,4 @@ function NeedToDo() {
 	)
 }
 
-export default NeedToDo;
+export default WithoutStatus;

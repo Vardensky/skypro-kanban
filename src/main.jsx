@@ -5,12 +5,12 @@ import './index.css'
 import './App.css'
 import PopUp from './components/PopUp/PopUp.jsx'
 import Header from './components/Header/Header.jsx'
-import NeedToDo from './components/NeedToDo/NeedToDo.jsx'
+import WithoutStatus from './components/WithoutStatus/WithoutStatus.jsx'
 
 ReactDOM.createRoot(document.getElementById('wrapper')).render(
   <React.StrictMode>
     <PopUp />
 		<Header />
-		<NeedToDo />
+		<WithoutStatus />
   </React.StrictMode>,
 )
