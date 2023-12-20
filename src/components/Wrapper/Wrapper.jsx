@@ -1,6 +1,7 @@
-function PopUp() {
-	return (
-		<>
+function Wrapper({children}) {
+	(
+		<div className="wrapper">
+			{/* pop-up start*/}
 			<div className="pop-exit" id="popExit">
 				<div className="pop-exit__container">
 					<div className="pop-exit__block">
@@ -44,7 +45,7 @@ function PopUp() {
 											name="name"
 											id="formTitle"
 											placeholder="Введите название задачи..."
-											autoFocus=""
+											autofocus=""
 										/>
 									</div>
 									<div className="form-new__block">
@@ -358,9 +359,11 @@ function PopUp() {
 					</div>
 				</div>
 			</div>
-			{/* <!-- pop - up end-- > */}
-		</>
-	);
+			{/* pop-up end*/}
+			{children}
+		
+		</div>
+	)
 }
 
-export default PopUp;
+export default Wrapper;
